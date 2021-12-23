@@ -1,5 +1,5 @@
 <?php
-$host ="https://toggl.com/api/v8/me";
+$host ="https://api.track.toggl.com/api/v8/me";
 $username = $_POST['username'];
 $password = $_POST['password'];
 $process = curl_init($host);

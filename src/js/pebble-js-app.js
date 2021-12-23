@@ -9,7 +9,7 @@ function send(token,method,call,json) {
 		console.log("Send token"+token);
 		var auth = "Basic "+base64.encode(token+':api_token');
 		console.log(auth);
-		xhr.open(method, "https://toggl.com/api/v8/"+call, false);
+		xhr.open(method, "https://api.track.toggl.com/api/v8/"+call, false);
 		xhr.setRequestHeader('Authorization',auth);
 		xhr.setRequestHeader('Content-type','application/json');
 		if ( json !== null ) {
